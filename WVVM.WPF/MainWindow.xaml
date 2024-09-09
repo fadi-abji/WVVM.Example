@@ -1,0 +1,14 @@
+﻿<Window x:Class="WVVM.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MVVM Example" Height="200" Width="300">
+    <Grid>
+        <StackPanel>
+            <!-- Bind to Name property in ViewModel -->
+            <TextBlock Text="{Binding Name}" FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+
+            <!-- Bind the button to the ChangeNameCommand -->
+            <Button Content="Change Name" Command="{Binding ChangeNameCommand}" Width="100" Height="30" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
